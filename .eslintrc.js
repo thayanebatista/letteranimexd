@@ -1,4 +1,9 @@
 module.exports = {
+  settings: {
+    "react": {
+      "version": "detect"
+    }
+  },
   env: {
     browser: true,
     es2021: true,
@@ -17,6 +22,7 @@ module.exports = {
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
+      tsx: true,
     },
     ecmaVersion: 'latest',
     sourceType: 'module',

@@ -5,3 +5,5 @@
 /.eslintrc.js
 /tailwind.config.js
 /babel.config.js
+/src/graphql/codegen/*.ts
+/src/graphql/codegen/** */.ts
