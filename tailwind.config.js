@@ -7,8 +7,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'header': '#6324C6',
+        primary: '#6324C6',
         'yellow-title': '#FFB800',
+      },
+      borderWidth: {
+        DEFAULT: '1px',
       },
     },
   },

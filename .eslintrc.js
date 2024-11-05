@@ -29,6 +29,8 @@ module.exports = {
   },
   plugins: [
     'react',
+    'prettier',
+    'react-hooks',
     '@typescript-eslint',
     'jest',
   ],
@@ -60,7 +62,7 @@ module.exports = {
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': ['error'],
     'max-len': ['error', {
-      code: 120,
+      code: 80,
       ignoreComments: true,
       ignoreStrings: true,
     }],
