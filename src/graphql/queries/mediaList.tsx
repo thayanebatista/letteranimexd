@@ -9,6 +9,8 @@ const MEDIA_LIST_PAGINATED_QUERY = graphql(`
           bannerImage
           coverImage {
             color
+            large
+            medium
             extraLarge
           }
           title {
