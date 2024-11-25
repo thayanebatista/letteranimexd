@@ -14,8 +14,7 @@ import type { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-
  * Learn more about it here: https://the-guild.dev/graphql/codegen/plugins/presets/preset-client#reducing-bundle-size
  */
 const documents = {
-  '\n  query MEDIA_LIST_PAGINATED_QUERY($page: Int, $perPage: Int) {\n    Page(page: $page, perPage: $perPage) {\n      mediaList {\n        id\n        media {\n          bannerImage\n          coverImage {\n            color\n            extraLarge\n          }\n          title {\n            english\n            native\n            romaji\n          }\n          description\n        }\n      }\n    }\n  }\n':
-    types.Media_List_Paginated_QueryDocument,
+    "\n  query MEDIA_LIST_PAGINATED_QUERY($page: Int, $perPage: Int) {\n    Page(page: $page, perPage: $perPage) {\n      mediaList {\n        id\n        media {\n          bannerImage\n          coverImage {\n            color\n            large\n            medium\n            extraLarge\n          }\n          title {\n            english\n            native\n            romaji\n          }\n          description\n        }\n      }\n    }\n  }\n": types.Media_List_Paginated_QueryDocument,
 };
 
 /**
@@ -35,13 +34,10 @@ export function graphql(source: string): unknown;
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function graphql(
-  source: '\n  query MEDIA_LIST_PAGINATED_QUERY($page: Int, $perPage: Int) {\n    Page(page: $page, perPage: $perPage) {\n      mediaList {\n        id\n        media {\n          bannerImage\n          coverImage {\n            color\n            extraLarge\n          }\n          title {\n            english\n            native\n            romaji\n          }\n          description\n        }\n      }\n    }\n  }\n',
-): (typeof documents)['\n  query MEDIA_LIST_PAGINATED_QUERY($page: Int, $perPage: Int) {\n    Page(page: $page, perPage: $perPage) {\n      mediaList {\n        id\n        media {\n          bannerImage\n          coverImage {\n            color\n            extraLarge\n          }\n          title {\n            english\n            native\n            romaji\n          }\n          description\n        }\n      }\n    }\n  }\n'];
+export function graphql(source: "\n  query MEDIA_LIST_PAGINATED_QUERY($page: Int, $perPage: Int) {\n    Page(page: $page, perPage: $perPage) {\n      mediaList {\n        id\n        media {\n          bannerImage\n          coverImage {\n            color\n            large\n            medium\n            extraLarge\n          }\n          title {\n            english\n            native\n            romaji\n          }\n          description\n        }\n      }\n    }\n  }\n"): (typeof documents)["\n  query MEDIA_LIST_PAGINATED_QUERY($page: Int, $perPage: Int) {\n    Page(page: $page, perPage: $perPage) {\n      mediaList {\n        id\n        media {\n          bannerImage\n          coverImage {\n            color\n            large\n            medium\n            extraLarge\n          }\n          title {\n            english\n            native\n            romaji\n          }\n          description\n        }\n      }\n    }\n  }\n"];
 
 export function graphql(source: string) {
   return (documents as any)[source] ?? {};
 }
 
-export type DocumentType<TDocumentNode extends DocumentNode<any, any>> =
-  TDocumentNode extends DocumentNode<infer TType, any> ? TType : never;
+export type DocumentType<TDocumentNode extends DocumentNode<any, any>> = TDocumentNode extends DocumentNode<  infer TType,  any>  ? TType  : never;
