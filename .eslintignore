@@ -1,0 +1,9 @@
+/dist
+/build
+/public
+/coverage
+/.eslintrc.js
+/tailwind.config.js
+/babel.config.js
+/src/graphql/codegen/*.ts
+/src/graphql/codegen/** */.ts
