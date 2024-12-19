@@ -1,7 +1,9 @@
 import React from 'react';
-import Header from '../components/Header';
-import { useMediaQuery } from '../hooks/queries/mediaQuery';
 import Card from '../components/Card';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
+import { useMediaQuery } from '../hooks/queries/mediaQuery';
 
 const Home: React.FC = () => {
   const page = 1;
@@ -22,6 +24,9 @@ const Home: React.FC = () => {
             nativeTitle={item?.media?.title?.native}
           />
         ))}
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
