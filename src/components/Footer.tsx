@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from './Button';
 import Icon from '@mdi/react';
 
 import { mdiGithub, mdiGmail, mdiInstagram, mdiLinkedin } from '@mdi/js';
@@ -7,14 +6,6 @@ import { mdiGithub, mdiGmail, mdiInstagram, mdiLinkedin } from '@mdi/js';
 const Footer: React.FC = () => {
   return (
     <div>
-      <div className="flex justify-center gap-4 pb-10">
-        <div className="flex justify-center">
-          <Button label="Previous" />
-        </div>
-        <div className="flex justify-center">
-          <Button label="Next" />
-        </div>
-      </div>
       <div>
         <footer className="flex flex-col justify-center h-24 bg-primary">
           <div className="flex items-center justify-center gap-8">
