@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#6324C6',
+        footer: '#320e6b',
         'yellow-title': '#FFB800',
       },
       borderWidth: {
