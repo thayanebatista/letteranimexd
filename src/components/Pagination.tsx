@@ -21,7 +21,11 @@ const Pagination: React.FC<PaginationProps> = ({
   return (
     <div className="flex justify-center gap-4 pb-10">
       <div className="flex justify-center">
-        <Button label="Previous" onClick={handlePrevious} />
+        <Button
+          label="Previous"
+          disabled={currentPage === 1}
+          onClick={handlePrevious}
+        />
       </div>
       <div className="flex justify-center">
         <Button label="Next" onClick={handleNext} />

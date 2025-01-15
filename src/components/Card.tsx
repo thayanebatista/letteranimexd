@@ -15,10 +15,12 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`bg-white shadow-md rounded-lg
-                  flex flex-col items-center ${className}`}
+      className={`bg-white shadow-md rounded-lg flex flex-col
+                   justify-center items-center gap-4 p-2 transition
+                   border border-opacity-40 border-primary
+                   hover:shadow-lg hover:scale-105 ${className}`}
     >
-      {image && <img className="w-64" src={image} alt={title ?? 'Imagem'} />}
+      {image && <img src={image} alt={title ?? 'Imagem'} />}
       <h2>{title}</h2>
       {nativeTitle && <h3>{nativeTitle}</h3>}
     </div>
