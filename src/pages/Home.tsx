@@ -17,6 +17,11 @@ const Home: React.FC = () => {
   const handlePageChange = (newPage: number) => {
     setPage(newPage);
     refetch({ page: page, perPage });
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   return (
@@ -29,7 +34,7 @@ const Home: React.FC = () => {
           <Loading />
         </div>
       )}
-      <div className="grid grid-cols-6 gap-4">
+      <div className="grid grid-cols-5 gap-4">
         {data?.Page?.mediaList?.map((item) => (
           <Card
             key={item?.id}
